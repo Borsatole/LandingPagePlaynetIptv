@@ -1,0 +1,510 @@
+@charset "UTF-8";
+
+/* Import das fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@400;500;600;700&family=Roboto&display=swap');
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1:#3104FF;
+    --cor2:#1000a5;
+    --card:#0f0038;
+
+    /* --cor1:#1801cc;
+    --cor2:#002ba0;
+    --card:#000d37; */
+}
+
+/* CONFIGURAÇÕES DO HEADER */
+header {
+    padding-top: 10px;
+    height: 83px;
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background-color: #0A0A0A;
+}
+
+/* LOGOTIPO DO HEADER */
+header img {
+    padding:10px;
+    height: 40px;
+}
+/* Logotipo responsividade */
+
+@media (max-width: 825px) { 
+    
+    header img {margin: auto;}
+}
+
+.controlew {
+    background-image: linear-gradient(180deg, var(--cor1) 0%, #08004b 66%);
+}
+
+section,header {
+    margin:auto;
+    max-width: 1200px;
+    
+}
+/* TELA1 DE TEXTO E IMAGEM */
+.info {
+    display: flex;
+    /* height: 703px; */
+}
+
+/* Break point 767 */
+
+/* CONFIGURAÇÕES DE ESPAÇOS (1 TELA DIVIDIDO EM 2) */
+.txt , .img {
+height: 90%;
+width: 50%;
+}
+
+@media (max-width: 1135px) {
+    .card {
+        margin-top: 15px;
+    } 
+
+}
+
+@media (max-width: 825px) { 
+    
+    .txt{ width: 100%;}
+    
+    .img {width: 0%;}
+}
+
+/* PRIMEIRO TEXTO H1 */
+.txt h1 {
+    font-family: 'Poppins', sans-serif;
+    padding: 40px 0px 0px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+/* PARAGRAFOS */
+.txt p {
+    padding: 10px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: regular;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.txt ul {
+    /* border: 1px dashed rgb(255, 255, 255); */
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul li {
+    /* border: 1px dashed rgb(255, 255, 255); */
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+li .bx-check {
+    font-size: 30px;
+    margin-right: 3px;
+    font-weight: bolder;
+}
+
+/* button div */
+.button {
+    width: 100%;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    
+}
+/* button responsividade */
+@media (max-width: 825px) {
+    
+.button {
+    transition: 1s;
+    width: 100%;
+    text-align: center;}
+}
+
+.btn_teste i {
+    margin: 5px;
+    font-size: 40px;
+}
+
+.btn_teste {
+    display: flex;
+    align-items: center;
+    background-color:var(--cor2);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px 30px ;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn_teste:hover {
+    transition: 0.5s;
+    background-color: var(--cor1);
+    color: white;
+    animation: outline 0.8s infinite;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imagem dispositivos */
+.img > img {
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.videoinstitucional {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    background-color: rgb(1 0 10);
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+
+.videoinstitucional h1 {
+    font-size: 30px;
+    color: var(--cor2);
+}
+
+.videoinstitucional section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+/* Imagem dispositivos responsividade */
+@media (max-width: 767px) { 
+   .videoinstitucional h1 {font-size: 20px;}
+    
+   .img > img {
+        transition: 1s;
+        display: none;
+    }
+
+    
+
+}
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+.imgetexto {
+    width: 100%;
+    margin-bottom: 30px;
+    /* border: 1px dashed white; */
+    display: flex;
+    align-items: center;
+}
+
+.imgetexto h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: var(--cor2);
+    padding-bottom: 10px;
+}
+
+.imgetexto p {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 19px;
+}
+
+.texto4k {
+    width: 50%;
+}
+
+.imgtexto4k {
+    width: 50%;
+}
+.imgtexto4k img {
+    width: 100%;
+}
+
+
+.video h1{
+    color: var(--cor2);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.planos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.card i {
+    padding: 5px;
+}
+
+.card h2 {
+    text-align: center;
+    background-color: var(--cor1);
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    padding: 15px;
+}
+
+.card h3 {
+    margin: 10%;
+    text-align: center;
+    /* height: 110px; */
+    font-size: 3em;
+    color: #ffffff;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+.card {
+    display: flex;
+    background-color: var(--card);
+    border-radius: 12px 12px 12px 12px;
+    font-family: 'Poppins', sans-serif;
+    height: 500px;
+    width: 280px;
+    flex-direction: column;
+}
+
+.card ul {
+    /* border: 1px dashed red; */
+    text-align: center;
+}
+.card ul li {
+    color: #ffffff;
+    padding-left: 19px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 0.8em;
+    border-bottom: 1px solid var(--cor1);
+}
+
+.card button {
+    outline: none;
+    border: none;
+    /* border: 1px dashed red; */
+    font-size: 1.8em;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cor1);
+    color: white;
+    margin: 10px;
+    margin-top: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    transition: 0.5s;
+    background-color: rgb(255, 255, 255);
+    color: var(--cor2);
+}
+
+.titleplans h1 {
+    color: var(--cor2);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    margin: 20px;
+}
+
+
+
+@media (max-width: 767px) { 
+    .card {
+        margin-bottom: 40px;
+        width: 80%;
+    }
+    .imgetexto {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;}
+
+    .imgetexto {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;}
+
+    .texto4k h1,p {
+        text-align: center;
+    }
+
+    .texto4k p {
+        text-align: center;
+    }
+
+    .texto4k, .imgtexto4k {
+        width: 100%;
+    }
+
+    .reverso {display: flex;
+        flex-direction:column-reverse;}
+
+    body {
+        padding: 0px 3px ;
+    }
+
+    .dispositivos {
+        display: flex;
+        gap:10px;
+        flex-direction: column;}
+    
+}
+
+.disposivitoscompativeis {
+    text-align: center;
+    width: 100%;
+    border:none;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: var(--cor2);
+    margin: 0 auto;
+}
+
+.cardimg {
+    padding: 10px;
+    margin: 0px 20px;
+    border: none;
+    width: 30%;
+    height: 150px;
+    cursor: pointer;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* filter: blur(5px); */
+}
+
+@media (max-width: 767px) { 
+    .cardimg {width: 85%;}
+}
+
+
+.cardimg h1 {
+    /* border: 1px solid red; */
+    font-size: 3 rem;
+    font-weight: 900;
+    color: #ffffff;
+    background-image: linear-gradient(var(--cor1) 90%,var(--cor2) 10%);
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.tvbox {
+    background-image:url(imagens/dispositivos/fundobox.png);
+    background-position: center middle;
+
+}
+.smart_tv {
+    background-image:url(imagens/dispositivos/fundosmarttv.png);
+    background-position: center top;
+}
+.celular {
+    background-image:url(imagens/dispositivos/fundocelular.png);
+    background-position: center top;
+
+    
+}
+
+.cardimg:hover{
+    transition: 1s;
+    
+}
+
+
+.dispositivos {
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+
+.outline {
+    animation: outline 0.8s infinite;
+}
+
+@keyframes outline {
+    100% {
+        outline: 5px solid var(--cor2);
+    }
+}
+
+.promocao {
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+}
+
+.videoinstitucional h1{ 
+    color: #ffffff;
+}
+
+
+.promocao p{
+    font-size: 1.9rem;
+}
+
+.promocao > .timer{
+    /* border: 1px solid white; */
+    margin-top: 10px;
+    width: 200px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bolder;
+    /* background-color: var(--cor2); */
+    color: rgba(255, 0, 179, 0.65);
+}
+
+.promocao img{
+    /* border: 1px solid white; */
+    width: 200px;
+}
