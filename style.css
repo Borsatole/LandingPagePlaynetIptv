@@ -159,13 +159,14 @@ a {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     cursor: pointer;
+    animation: outline 0.8s infinite;
 }
 
 .btn_teste:hover {
     transition: 0.5s;
     background-color: var(--cor1);
     color: white;
-    animation: outline 0.8s infinite;
+    
 }
 
 .img {
@@ -294,7 +295,7 @@ font-family: 'Roboto', sans-serif; */
     /* height: 110px; */
     font-size: 3em;
     color: #ffffff;
-    border: 1px solid red;
+    border: 4px solid red;
     border-radius: 50%;
 }
 
@@ -321,6 +322,15 @@ font-family: 'Roboto', sans-serif; */
     border-bottom: 1px solid var(--cor1);
 }
 
+.card div {
+    display: flex;
+    justify-content: center;
+}
+.card div a {
+    width: 90%;
+}
+
+
 .card button {
     outline: none;
     border: none;
@@ -331,14 +341,19 @@ font-family: 'Roboto', sans-serif; */
     color: white;
     margin: 10px;
     margin-top: 40px;
-    border-radius: 20px;
+    border-radius: 7px;
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
     cursor: pointer;
+    animation: outline 0.8s infinite;
 }
 
 .card button:hover {
     transition: 0.5s;
-    background-color: rgb(255, 255, 255);
-    color: var(--cor2);
+    background-color: var(--cor1);
+    color: white;
+    
 }
 
 .titleplans h1 {
