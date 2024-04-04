@@ -13,6 +13,7 @@
 :root {
     --cor1:#3104FF;
     --cor2:#1000a5;
+    --cor3:#ff8400;
     --card:#0f0038;
 
     /* --cor1:#1801cc;
@@ -149,7 +150,7 @@ a {
 .btn_teste {
     display: flex;
     align-items: center;
-    background-color:var(--cor2);
+    background-color:var(--cor1);
     color: white;
     border: none;
     border-radius: 7px;
@@ -164,7 +165,7 @@ a {
 
 .btn_teste:hover {
     transition: 0.5s;
-    background-color: var(--cor1);
+    background-color: var(--cor2);
     color: white;
     
 }
@@ -249,6 +250,10 @@ font-family: 'Roboto', sans-serif; */
 
 .texto4k {
     width: 50%;
+}
+
+.texto4k h1{
+    color: var(--cor3);
 }
 
 .imgtexto4k {
@@ -346,18 +351,19 @@ font-family: 'Roboto', sans-serif; */
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     cursor: pointer;
-    animation: outline 0.8s infinite;
+    /* animation: outline 0.8s infinite; */
 }
 
 .card button:hover {
     transition: 0.5s;
+    scale: 1.2;
     background-color: var(--cor1);
     color: white;
     
 }
 
 .titleplans h1 {
-    color: var(--cor2);
+    color: var(--cor3);
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
@@ -415,7 +421,7 @@ font-family: 'Roboto', sans-serif; */
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    color: var(--cor2);
+    color: var(--cor3);
     margin: 0 auto;
 }
 
@@ -516,7 +522,7 @@ font-family: 'Roboto', sans-serif; */
     text-align: center;
     font-weight: bolder;
     /* background-color: var(--cor2); */
-    color: rgba(255, 0, 179, 0.65);
+    color: #ff8400;
 }
 
 .promocao img{
