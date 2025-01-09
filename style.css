@@ -8,6 +8,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: poppins;
 }
 
 :root {
@@ -160,7 +161,7 @@ a {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     cursor: pointer;
-    animation: outline 0.8s infinite;
+    animation: outline 3s forwards;
 }
 
 .btn_teste:hover {
@@ -218,6 +219,10 @@ a {
         transition: 1s;
         display: none;
     }
+
+
+
+
 
     
 
@@ -309,7 +314,7 @@ font-family: 'Roboto', sans-serif; */
     background-color: var(--card);
     border-radius: 12px 12px 12px 12px;
     font-family: 'Poppins', sans-serif;
-    height: 500px;
+    /* height: 500px; */
     width: 280px;
     flex-direction: column;
 }
@@ -332,6 +337,7 @@ font-family: 'Roboto', sans-serif; */
     justify-content: center;
 }
 .card div a {
+    text-align: center;
     width: 90%;
 }
 
@@ -345,7 +351,6 @@ font-family: 'Roboto', sans-serif; */
     background-color: var(--cor1);
     color: white;
     margin: 10px;
-    margin-top: 40px;
     border-radius: 7px;
     width: 90%;
     font-family: 'Poppins', sans-serif;
@@ -356,7 +361,7 @@ font-family: 'Roboto', sans-serif; */
 
 .card button:hover {
     transition: 0.5s;
-    scale: 1.2;
+    scale: 1.1;
     background-color: var(--cor1);
     color: white;
     
@@ -410,6 +415,8 @@ font-family: 'Roboto', sans-serif; */
         display: flex;
         gap:10px;
         flex-direction: column;}
+
+    
     
 }
 
@@ -444,6 +451,8 @@ font-family: 'Roboto', sans-serif; */
 
 @media (max-width: 767px) { 
     .cardimg {width: 85%;}
+
+    
 }
 
 
@@ -488,12 +497,12 @@ font-family: 'Roboto', sans-serif; */
 
 
 .outline {
-    animation: outline 0.8s infinite;
+    animation: outline 1s infinite;
 }
 
 @keyframes outline {
     100% {
-        outline: 5px solid var(--cor2);
+       
     }
 }
 
@@ -528,4 +537,52 @@ font-family: 'Roboto', sans-serif; */
 .promocao img{
     /* border: 1px solid white; */
     width: 200px;
+}
+
+.testegratis {
+    /* background-color: rgb(18, 18, 18); */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.testegratis h1{
+    color: #ff8400;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.testegratis p {
+    padding: 0 10%;
+    text-align: center;
+}
+
+.testegratis .lista {
+    color: #ffffff;
+    background-color: #ff8400;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    columns: 4;
+}
+
+@media (max-width: 768px) {
+    .testegratis .lista {
+        color: #ffffff;
+        background-color: #ff8400;
+        border-radius: 20px;
+        padding: 20px;
+        width: 90%;
+        columns: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+   
 }
